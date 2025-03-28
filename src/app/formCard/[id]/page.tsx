@@ -31,7 +31,7 @@ export default function FormCard() {
     formData.append("icon", imagem); // Aqui vai a imagem real
 
     try {
-      const response = await fetch("http://localhost:3333/links", {
+      const response = await fetch("https://assumteklinksbackend.onrender.com/links", {
         method: "POST",
         body: formData,
       });

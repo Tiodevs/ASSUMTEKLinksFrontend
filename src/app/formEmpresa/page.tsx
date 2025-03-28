@@ -50,7 +50,7 @@ export default function Home() {
         data.append("logo", logoFile);
       }
 
-      const response = await axios.post("http://localhost:3333/panel", data, {
+      const response = await axios.post("https://assumteklinksbackend.onrender.com/panel", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
