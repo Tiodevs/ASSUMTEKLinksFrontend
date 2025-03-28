@@ -1,22 +1,28 @@
 {
   "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
     "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/not-found.css",
       "static/chunks/app/not-found.js"
     ],
-    "/_not-found/page": [
+    "/empresa/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/_not-found/page.css",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/empresa/[id]/page.css",
+      "static/chunks/app/empresa/[id]/page.js"
     ],
-    "/layout": [
+    "/adm/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/css/app/adm/[id]/page.css",
+      "static/chunks/app/adm/[id]/page.js"
     ]
   }
 }

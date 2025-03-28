@@ -8,6 +8,7 @@ import { handleEmpresa } from "@/app/actions/serverActions";
 
 export default function Home() {
   const IdEmpresa = decodeURIComponent(IdEmpresaComponent() as string).trim();
+
   const [empresa, setEmpresa] = useState<any>(null);
   const [error, setError] = useState<string | null>(null); // Estado para erros
 
@@ -85,7 +86,7 @@ export default function Home() {
                 <h2>{link.title}</h2>
                 <p>{link.description}</p>
               </div>
-              <Image src="/LogoAssumteck.png" alt="Link Image" width={100} height={100} />
+              <Image src={link.icon_url} alt="Link Image" width={100} height={100} />
             </a>
           ))}
         </div>

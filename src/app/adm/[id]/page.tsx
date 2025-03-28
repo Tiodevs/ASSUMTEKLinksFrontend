@@ -86,7 +86,7 @@ export default function EditEmpresa() {
                     {links.description}
                   </p>
                 </div>
-                <Image src="/LogoAssumteck.png" alt="Email" width={100} height={100} />
+                <Image src={links.icon_url} alt="Email" width={100} height={100} />
               </a>
               <div className={styles.cardActions}>
               <button onClick={() => handleDeleteCard(links.id)}>Deletar card</button>
